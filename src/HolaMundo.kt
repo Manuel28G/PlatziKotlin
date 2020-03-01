@@ -1,3 +1,5 @@
+import java.util.function.Consumer
+
 fun main() {
     println("Hola Mundo")
     println(4+2)
@@ -33,4 +35,13 @@ fun main() {
     println(parrafo.trimIndent())
     println("************Removing trash elemnts***********")
     println(parrafo.trimMargin("** "))
+
+    val numberToPrint = 1..10   
+    for(i in numberToPrint)
+        println(i)
+
+    val aToC = 'A'..'C'
+
+    for(lettler in aToC)
+        println(lettler)
 }
