@@ -36,7 +36,7 @@ fun main() {
     println("************Removing trash elemnts***********")
     println(parrafo.trimMargin("** "))
 
-    val numberToPrint = 1..10   
+    val numberToPrint = 1..10
     for(i in numberToPrint)
         println(i)
 
@@ -44,4 +44,19 @@ fun main() {
 
     for(lettler in aToC)
         println(lettler)
+
+    val number = 5
+    if(number.equals(5))
+        println("Es igual a $number")
+    else
+        println("No es igual a $number")
+
+    when(number){
+        in 1..5 -> println("Esta entre 1 y 5")
+        5 -> print("Es 5")
+        in 2..3 -> println("Esta entre 2 y 3")
+        !in 5..10 -> println("No Esta entre 5 y 10")
+        else -> println("numero no soportado")
+    }
+
 }
