@@ -59,4 +59,28 @@ fun main() {
         else -> println("numero no soportado")
     }
 
+    var i = 1
+    while(!i.equals(11)){
+        println("mensaje: $i")
+        i = i.inc()
+    }
+
+    forCicles()
+
+}
+
+fun forCicles(){
+
+    var daysOfWeek = listOf("Domingo","Lunes","Martes","Miercoles","Jueves","Viernes","Sabado")
+    daysOfWeek.forEach{
+        println(it)
+    }
+
+    for((index,day) in daysOfWeek.withIndex()){
+        println("$index :$day")
+    }
+
+    for(day in daysOfWeek){
+        println(day)
+    }
 }
